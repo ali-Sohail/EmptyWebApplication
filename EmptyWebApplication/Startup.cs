@@ -32,7 +32,7 @@ namespace EmptyWebApplication
             //services.AddDbContext<Models.ModelsDbContext>(opt =>
             //opt.UseInMemoryDatabase("Person"));
 
-            var t = Configuration.GetConnectionString("UserDBContext");
+            //var t = Configuration.GetConnectionString("UserDBContext");
 
             services.AddDbContext<Models.Context.UsersDBContext>(opt =>
                 opt.UseSqlServer("Server=.;Database=Demo;Trusted_Connection=True;MultipleActiveResultSets=true")
