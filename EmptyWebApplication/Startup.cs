@@ -58,7 +58,6 @@ namespace EmptyWebApplication
                 // Mapping Controllers from Controllers Folder
                 endpoints.MapControllers();
 
-
                 // Creating Context Inline
                 //endpoints.MapGet("/", async context =>
                 //{

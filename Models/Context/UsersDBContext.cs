@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-using Models;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace Models.Context
 {
@@ -17,6 +14,7 @@ namespace Models.Context
         }
 
         public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<DaliyLog> DaliyLog { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
